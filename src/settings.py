@@ -17,7 +17,7 @@ PROJECT_NAME: str = "DOTA"
 PROJECT_NAME_FULL: str = (
     "DOTA v2.0: Dataset of Object deTection in Aerial images"
 )
-HIDE_DATASET = True  # set False when 100% sure about repo quality
+HIDE_DATASET = False  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
