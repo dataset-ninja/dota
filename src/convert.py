@@ -183,7 +183,7 @@ def convert_and_upload_supervisely_project(
 
     tag_acquisition_date = sly.TagMeta("acquisition date", sly.TagValueType.ANY_STRING)
     tag_imagesource = sly.TagMeta("image source", sly.TagValueType.ANY_STRING)
-    tag_gsd = sly.TagMeta("ground sample distance, m", sly.TagValueType.ANY_NUMBER)
+    tag_gsd = sly.TagMeta("ground sample distance", sly.TagValueType.ANY_NUMBER)
 
     tag_difficult = sly.TagMeta(
         "difficult", sly.TagValueType.ONEOF_STRING, possible_values=["True", "False"]

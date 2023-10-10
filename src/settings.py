@@ -15,7 +15,7 @@ from dataset_tools.templates import (
 ##################################
 PROJECT_NAME: str = "DOTA"
 PROJECT_NAME_FULL: str = (
-    "DOTA: A Large-Scale Benchmark and Challenges for Object Detection in Aerial Images v2.0"
+    "DOTA v2.0: Dataset of Object deTection in Aerial images"
 )
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
@@ -102,7 +102,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://captain-whu.github.
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
-    "__PRETEXT__": "Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance, m***, while every OBB has boolean ***difficult*** tag"
+    "__PRETEXT__": "Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance***, while every OBB has boolean ***difficult*** tag"
 }
 TAGS: Optional[List[str]] = None
 
