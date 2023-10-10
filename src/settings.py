@@ -13,56 +13,97 @@ from dataset_tools.templates import (
 ##################################
 # * Before uploading to instance #
 ##################################
-PROJECT_NAME: str = None
-PROJECT_NAME_FULL: str = None
+PROJECT_NAME: str = "DOTA"
+PROJECT_NAME_FULL: str = (
+    "DOTA: A Large-Scale Benchmark and Challenges for Object Detection in Aerial Images v2.0"
+)
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
 # * After uploading to instance ##
 ##################################
-LICENSE: License = None
-APPLICATIONS: List[Union[Industry, Domain, Research]] = None
-CATEGORY: Category = None
+LICENSE: License = License.Custom(url="https://captain-whu.github.io/DOTA/dataset.html")
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [Domain.Geospatial()]
+CATEGORY: Category = Category.Aerial(extra=Category.Satellite())
 
-CV_TASKS: List[CVTask] = None
-ANNOTATION_TYPES: List[AnnotationType] = None
+CV_TASKS: List[CVTask] = [CVTask.ObjectDetection()]
+ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.ObjectDetection()]
 
-RELEASE_DATE: Optional[str] = None  # e.g. "YYYY-MM-DD"
+RELEASE_DATE: Optional[str] = "2021-02-25"  # e.g. "YYYY-MM-DD"
 if RELEASE_DATE is None:
     RELEASE_YEAR: int = None
 
-HOMEPAGE_URL: str = None
+HOMEPAGE_URL: str = "https://captain-whu.github.io/DOTA/index.html"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = None
+PREVIEW_IMAGE_ID: int = 7003618
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
-GITHUB_URL: str = None
+GITHUB_URL: str = "https://github.com/dataset-ninja/dota"
 # URL to GitHub repo on dataset ninja (e.g. "https://github.com/dataset-ninja/some-dataset")
 
 ##################################
 ### * Optional after uploading ###
 ##################################
-DOWNLOAD_ORIGINAL_URL: Optional[Union[str, dict]] = None
+DOWNLOAD_ORIGINAL_URL: Optional[
+    Union[str, dict]
+] = "https://captain-whu.github.io/DOTA/dataset.html"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = None
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "plane": [230, 25, 75],
+    "ship": [60, 180, 75],
+    "storage tank": [255, 225, 25],
+    "baseball diamond": [0, 130, 200],
+    "tennis court": [245, 130, 48],
+    "basketball court": [145, 30, 180],
+    "ground track field": [70, 240, 240],
+    "harbor": [240, 50, 230],
+    "bridge": [210, 245, 60],
+    "large vehicle": [250, 190, 212],
+    "small vehicle": [0, 128, 128],
+    "helicopter": [220, 190, 255],
+    "roundabout": [170, 110, 40],
+    "soccer ball field": [255, 250, 200],
+    "swimming pool": [128, 0, 0],
+    "container crane": [170, 255, 195],
+    "airport": [128, 128, 0],
+    "helipad": [255, 215, 180],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 # If you have more than the one paper, put the most relatable link as the first element of the list
 # Use dict key to specify name for a button
-PAPER: Optional[Union[str, List[str], Dict[str, str]]] = None
+PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
+    "https://arxiv.org/abs/2102.12219",
+    "https://ieeexplore.ieee.org/document/8578516",
+    "https://arxiv.org/abs/1812.00155",
+]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = None
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/CAPTAIN-WHU/DOTA"
 
-CITATION_URL: Optional[str] = None
-AUTHORS: Optional[List[str]] = None
+CITATION_URL: Optional[str] = "https://captain-whu.github.io/DOTA/index.html"
+AUTHORS: Optional[List[str]] = [
+    "Jian Ding",
+    "Nan Xue",
+    "Gui-Song Xia",
+    "Xiang Bai",
+    "Wen Yang",
+    "Micheal Ying Yang",
+    "Serge Belongie",
+    "Jiebo Luo",
+    "Mihai Datcu",
+    "Marcello Pelillo",
+    "Liangpei Zhang",
+]
 
-ORGANIZATION_NAME: Optional[Union[str, List[str]]] = None
-ORGANIZATION_URL: Optional[Union[str, List[str]]] = None
+ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CHI-NLD-USA-GER-ITL joint research group"
+ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://captain-whu.github.io/DOTA/people.html"
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__PRETEXT__": "Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance, m***, while every OBB has boolean ***difficult*** tag"
+}
 TAGS: Optional[List[str]] = None
 
 
