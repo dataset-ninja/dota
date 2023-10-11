@@ -12,8 +12,8 @@ The images used in DOTA-v2.0 are from three distinct ***image source***: Google 
 |                      | Google Earth | GF&JL  | Aerial | All     |
 | ---------------------- | -------------- | -------- | -------- | --------- |
 | # of images          | 10186        | 516    | 566    | 11268   |
-| Images Area (10^{6}) | 29,991       | 75,854 | 20,462 | 126,306 |
-| Objects Area (106)   | 1,111        | 243    | 673    | 2,027   |
+| Images Area (10<sup>6</sup>) | 29,991       | 75,854 | 20,462 | 126,306 |
+| Objects Area (10<sup>6</sup>6)   | 1,111        | 243    | 673    | 2,027   |
 | Foreground Ratio     | 0.037        | 0.003  | 0.033  | 0.016   |
 
 Another valuable meta inforamtion is ***ground sample distance*** (GSD), which measures the distance between pixel centers on Earth. GSD is valuable for calculating actual object sizes, which, in turn, can be employed for identifying mislabeled or misclassified instances. Additionally, GSD can be integrated directly into object detectors to enhance the accuracy of category classification for objects with less physical size variation. The authors highlight that GSDs vary across the dataset, with different values for images from GF-2, JL-1, CycloMedia, and Google Earth. Moreover, it's noted that GSD information is missing in 70% of the images within DOTA-v2.0. However, the absence of GSD data does not significantly impact applications that rely on GSD, as machine learning-based methods can be utilized to estimate it.
