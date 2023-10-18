@@ -80,7 +80,7 @@ PAPER: Optional[Union[str, List[str], Dict[str, str]]] = [
     "https://arxiv.org/abs/1812.00155",
 ]
 BLOGPOST: Optional[Union[str, List[str], Dict[str, str]]] = None
-REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = "https://github.com/CAPTAIN-WHU/DOTA"
+REPOSITORY: Optional[Union[str, List[str], Dict[str, str]]] = {"GitHub":"https://github.com/CAPTAIN-WHU/DOTA"}
 
 CITATION_URL: Optional[str] = "https://captain-whu.github.io/DOTA/index.html"
 AUTHORS: Optional[List[str]] = [
