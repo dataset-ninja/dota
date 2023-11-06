@@ -4,6 +4,6 @@ The dataset consists of 5215 images with 349589 labeled objects belonging to 18 
 
 Images in the DOTA dataset have bounding box annotations. There are 2793 (54% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *test-dev* (2792 images), *train* (1830 images), and *val* (593 images). Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance***, while every OBB has boolean ***difficult*** tag. The dataset was released in 2021 by the CHI-NLD-USA-GER-ITL joint research group.
 
-Here are the visualized examples for each of the 18 classes:
+Here are the visualized examples for the classes:
 
 [Dataset classes](https://github.com/dataset-ninja/dota/raw/main/visualizations/classes_preview.webm)
