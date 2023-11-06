@@ -96,6 +96,7 @@ AUTHORS: Optional[List[str]] = [
     "Marcello Pelillo",
     "Liangpei Zhang",
 ]
+AUTHORS_CONTACTS: Optional[List[str]] = ["http://www.captain-whu.com/xia_En.html", "https://dingjiansw101.github.io/", "jian.ding@whu.edu.cn"]
 
 ORGANIZATION_NAME: Optional[Union[str, List[str]]] = "CHI-NLD-USA-GER-ITL joint research group"
 ORGANIZATION_URL: Optional[Union[str, List[str]]] = "https://captain-whu.github.io/DOTA/people.html"
@@ -151,6 +152,7 @@ def get_settings():
     settings["repository"] = REPOSITORY
     settings["citation_url"] = CITATION_URL
     settings["authors"] = AUTHORS
+    settings["authors_contacts"] = AUTHORS_CONTACTS
     settings["organization_name"] = ORGANIZATION_NAME
     settings["organization_url"] = ORGANIZATION_URL
     settings["slytagsplit"] = SLYTAGSPLIT
