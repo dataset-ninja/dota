@@ -2,7 +2,7 @@
 
 The dataset consists of 5215 images with 349589 labeled objects belonging to 18 different classes including *small vehicle*, *large vehicle*, *ship*, and other: *harbor*, *tennis court*, *airport*, *bridge*, *swimming pool*, *ground track field*, *roundabout*, *storage tank*, *plane*, *soccer ball field*, *baseball diamond*, *basketball court*, *helicopter*, *container crane*, and *helipad*.
 
-Images in the DOTA dataset have bounding box annotations. There are 2793 (54% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *test-dev* (2792 images), *train* (1830 images), and *val* (593 images). Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance***, while every OBB has boolean ***difficult*** tag. The dataset was released in 2021 by the CHI-NLD-USA-GER-ITL joint research group.
+Images in the DOTA dataset have bounding box annotations. There are 2793 (54% of the total) unlabeled images (i.e. without annotations). There are 3 splits in the dataset: *test-dev* (2792 images), *train* (1830 images), and *val* (593 images). Additionally, images contain meta-info about ***acquisition date***, ***image source***, and ***ground sample distance***, while every OBB has boolean ***difficult*** tag. The dataset was released in 2021 by the <span style="font-weight: 600; color: grey; border-bottom: 1px dashed #d3d3d3;">CHI-NLD-USA-GER-ITL joint research group</span>.
 
 Here are the visualized examples for the classes:
 
