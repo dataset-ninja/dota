@@ -1,6 +1,6 @@
 Dataset **DOTA** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/nl7wlkpopfz2egs4gtcmg/dota-DatasetNinja.tar?rlkey=qixqzx0hs625vv67f7tio29bn&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzI1NDFfRE9UQS9kb3RhLURhdGFzZXROaW5qYS50YXIiLCAic2lnIjogIjFpeHFZdkxmeDZVTWk5Nm0xMXVia000cmNVdHNTckhiRnhoZjR1RGRKdlk9In0=)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
